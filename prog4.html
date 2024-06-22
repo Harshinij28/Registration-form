@@ -1,0 +1,150 @@
+<html>
+    <head>
+        <title>registration form</title>
+        <style>
+            body{
+                background-image: linear-gradient(to left ,rgb(239, 199, 241),rgb(184, 119, 184));
+                
+            }
+            .rs{
+                width: 600;
+                height: 600;
+                top: 100;
+                right: 100;
+                left: 200;
+                margin: 500;  
+            }
+          
+            table{
+                background-image: url(white.jpg);
+                border-spacing: 30;
+            }
+            #bt{
+              background-image: linear-gradient(to left ,rgb(239, 199, 241),rgb(184, 119, 184));
+  padding: 15px 32px;
+  text-align: center;
+  font-size: 16px;
+            }
+           
+        </style>
+        <script>
+            function myfun(event){
+
+                event.preventDefault();
+
+                var gender = document.querySelector('input[name="Gender"]:checked').value;
+
+                var a=document.getElementById("a1").value;
+
+                var b=document.getElementById("a2").value;
+                
+                var c=document.getElementById("a3").value;
+                
+                var d=document.getElementById("a4").value;
+                
+                var e=document.getElementById("a5").value;
+                
+                var f=document.getElementById("a6").value;
+                document.write("<br>",a);
+                document.write("<br>",b);
+                document.write("<br>",c);
+                document.write("<br>",d);
+                document.write("<br>",e);
+                document.write("<br>",f);
+                document.write("<br>",gender);
+            }
+        </script>
+    </head>
+    <body>
+        <div class="rs" >
+                
+            <table>
+                <tr>
+                    <td>
+                        <h1>Registration</h1>
+                    </td>
+                </tr><center>
+                <tr>
+                    <th>
+                        <label for="Full Name">Full Name</label>
+                    </th>
+                    <th>
+                        <label for="Username">Username</label>
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" name="Full Name" placeholder="Enter your name" id="a1" >
+                    </td>
+                    <td>
+                        <input type="text" name="Username" placeholder="Enter your Username" id="a2" >
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <label for="Email">Email</label>
+                    </th>
+                    <th>
+                        <label for="Phone number">Phone number</label>
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" name="Email" placeholder="Enter your email" id="a3" >
+                    </td>
+                    <td>
+                        <input type="text" name="Phone number" placeholder="Enter your phone number" id="a4" >
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <label for="Password">Password</label>
+                    </th>
+                    <th>
+                        <label for="Confirm Password">Confirm Password</label>
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" name="Password" placeholder="Enter your Password" id="a5" >
+                    </td>
+                    <td>
+                        <input type="text" name="Confirm Password" placeholder="Confirm your Password" id="a6" >
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <label for="Gender">Gender</label>
+                    </th>
+                </tr><div id="radio">
+                <tr>
+                    
+                    <td>
+                        <input type="radio" id="m" value="Male" name="Gender" checked >
+                        <label for="m">Male</label>
+                    </td>
+                    <td>
+                        <input type="radio" id="m" value="Female" name="Gender">
+                        <label for="m">Female</label>
+                    </td>
+                    <td>
+                        <input type="radio" id="m" value="Others" name="Gender">
+                        <label for="m">Others</label>
+                    </td>
+                
+                </tr></div>
+                <tr>
+                    <td align="center">
+                        
+                    <input type="button" name="Register" value="Register" onclick="myfun(event)" id="bt">
+                
+                </td>
+            </tr></center>
+                
+            </table>
+        
+        </div>
+        
+
+        </body>
+</html>
